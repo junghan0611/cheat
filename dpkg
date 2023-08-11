@@ -1,0 +1,41 @@
+---
+tags: [ packaging, dpkg ]
+---
+
+# 충돌난 패키지 강제 삭제 하는 방법
+sudo dpkg --remove --force-remove-reinstreq emacs-bin-common
+
+# 완전 강제로 지워라!
+
+비법은 없다. 아래 커맨드들을 계속 돌려가면서 관련 녀석들을 잡아야 한다.
+emacs 가 왜 문제가 되는가? 나의 패키지에 conflict 로 emacs 를 잡아놔서 그렇다
+그러니 동시에 공존할 수가 없어서 문제가 발생하는 거다. 
+어자피 경로가 다르다. 서로 관심 없다. 신경 쓸 것도 없다. 자유롭게 설치하라.
+------------------------------
+cd /var/lib/dpkg/info
+sudo mv emacs28-* /tmp
+------------------------------
+sudo apt --fix-broken install
+------------------------------
+dpkg -l | grep emacs
+ 2690  sudo dpkg --remove --force-remove-reinstreq --force-depends apel
+ 2691  sudo dpkg --remove --force-remove-reinstreq --force-depends dh-elpa-helper
+ 2692  sudo dpkg --remove --force-remove-reinstreq --force-depends emacs-bin-common
+ 2693  sudo dpkg --remove --force-remove-reinstreq --force-depends flim
+ 2694  sudo dpkg --remove --force-remove-reinstreq --force-depends emacsen-common
+ 2695  sudo dpkg --remove --force-remove-reinstreq --force-depends emacs-bin-common
+------------------------------
+rm -Rf /var/lib/dpkg/info/emacsen-common.*
+------------------------------
+
+# To install or upgrade a package:
+dpkg -i <deb-file>
+
+# To remove a package (including configuration files):
+dpkg -P <deb-file>
+
+# To list all installed packages with versions and details:
+dpkg -l
+
+# To determine whether a Debian package is installed:
+dpkg -s <deb-file> | grep Status

@@ -1,0 +1,12 @@
+---
+tags: [ asciidoc, pandoc ]
+---
+
+asciidoc으로 문서 작성할 껀 아니다.
+xml로 변환 후 pandoc으로 md, org 로 뽑자
+
+https://karinavarela.me/2020/05/06/converting-asciidoc-to-markdown/
+
+ - 2022-09-18 19:28  asciidoc -b docbook README.adoc
+ - 2022-09-18 19:29  pandoc -f docbook -t markdown_strict README.xml -o README.md
+ - 2022-09-18 19:30  pandoc -f docbook -t org README.xml  -o README.org

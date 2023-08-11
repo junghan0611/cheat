@@ -1,0 +1,73 @@
+---
+tags: [cheat, kb, tldr]
+---
+
+kb. A minimalist knowledge base manager
+https://github.com/gnebbia/kb
+
+`kb` 사용법을 적어두자. 어려울 것 없다. import는 tar.gz으로 압축한 파일만 가능하다.
+
+> 나의 사용방안
+
+1) books, quotes, terms category
+```
+➜  ~ kb list
+   [ ID ]  Title                Category             Tags
+
+ - [  0 ]  meaningful-life   books                 quotes;self-help
+ - [  1 ]  quotes-ko         quotes
+ - [  2 ]  통합성               terms                self-help
+➜  ~
+```
+
+2) md 확장자 만들어 주기
+
+fd . -t f -E "*.*" -x ln -s {/} {}.md
+```
+➜  data tree
+.
+├── books
+│   ├── meaningful-life
+│   └── meaningful-life.md -> meaningful-life
+├── default
+├── make_sym.sh
+├── quotes
+│   ├── quotes-ko
+│   └── quotes-ko.md -> quotes-ko
+└── terms
+    ├── 통합성
+    └── 통합성.md -> 통합성
+```
+
+
+> 추가하기
+
+- 텍스트 노트 생성 및 추가
+
+kb add --title "quotes-ko" --category "quotes"
+kb add --title "meaningful-life" --category "books" --tags "quotes;self-help"
+kb add --title "통합성" --category "terms" --tags "self-help"
+
+- `파일`을 추가
+$ kb add ~/Install-and-Use-kb.txt --title install_guide --category "procedure" \
+    --tags "kb;install" --author "tech" --status "draft"
+
+- 여러 개의 파일을 추가
+kb add ~/Notes/cheatsheets/general/* --category "cheatsheet"
+
+> 찾기
+
+$ kb list -c cheatsheet
+$ kb list --tags "tag1;tag2"
+
+> 삭제
+
+kb delete --id 2
+
+> 편집
+
+kb edit --id 2
+kb edit --title "git"
+
+> 참고자료
+https://wiki.archlinux.org/title/Kb

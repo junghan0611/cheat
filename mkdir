@@ -1,0 +1,17 @@
+# 묶어서 한번에
+> mkdir dict-{wn,vera,jargon,devil,gcide,foldoc}
+> ls
+dict-devil/   dict-wn/                             dict-jargon_4.4.7-3.1_all.deb
+dict-foldoc/  dictd_1.13.0+dfsg-1build2_amd64.deb  dict-vera_1%3a1.24-1_all.deb
+dict-gcide/   dict-devil_1.0-13.1_all.deb          dict-wn_1%3a3.0-37_all.deb
+dict-jargon/  dict-foldoc_20201018-1_all.deb       dict_1.13.0+dfsg-1build2_amd64.deb
+dict-vera/    dict-gcide_0.48.5+nmu2_all.deb
+
+# To create nested directories:
+mkdir -p foo/bar/baz
+
+# To create foo/bar and foo/baz directories:
+mkdir -p foo/{bar,baz}
+
+# To create the foo/bar, foo/baz, foo/baz/zip and foo/baz/zap directories:
+mkdir -p foo/{bar,baz/{zip,zap}}

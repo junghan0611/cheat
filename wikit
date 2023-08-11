@@ -1,0 +1,50 @@
+---
+tags: [wiki, tldr]
+---
+
+> wikipedia
+
+리눅스 한글 위키 페이지 정보
+$ wikit linux -l ko
+
+기본 브라우저로 띄움
+$ wikit linux -b
+
+20라인만 보여주기
+$ wikit linux -line 20
+
+
+> default help
+
+    --lang <LANG>        Specify language;
+    -l <LANG>            LANG is an HTML ISO language code
+
+    --all                Print all sections of the article
+    -a                   Recommended to pipe into a reader e.g. less
+
+    -b                   Open Wikipedia article in default browser
+
+    --browser <BROWSER>  Open article in specific BROWSER
+
+    -d                   Open disambiguation CLI menu
+
+    -D                   Open disambiguation page in browser
+
+    --line <NUM>         Set line wrap length to NUM (minimum 15)
+
+    --link               Print a link to the full article after the summary
+
+    --version / -v       Print installed version number
+
+    --name / -n          Print the CLI name: wikit
+
+  Examples:
+
+    $ wikit nodejs
+
+    $ wikit empire state building --link
+
+    $ wikit linux -b
+
+    $ wikit jugo --lang es
+

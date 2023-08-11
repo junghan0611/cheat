@@ -1,0 +1,23 @@
+---
+tags: [zotero]
+---
+
+Zotero
+
+다크 테마를 지원하지 않는다. 아래와 같이 스크립트 파일에 GTK_THEME=Default를 넣어준다.
+다른 방법이 딱히 안되서 그냥 이렇게 수정한다.
+
+❯ cat /usr/lib/zotero/zotero                                                             /usr/local/bin
+#!/bin/bash
+
+# Increase open files limit
+#
+# Mozilla file functions (OS.File.move()/copy(), NetUtil.asyncFetch/asyncCopy()) can leave file
+# descriptors open for a few seconds (even with an explicit inputStream.close() in the case of
+# the latter), so a source installation that copies ~500 translators and styles (with fds for
+# source and target) can exceed the default 1024 limit.
+# Current hard-limit on Ubuntu 16.10 is 4096
+ulimit -n 4096
+
+CALLDIR="$(dirname "$(readlink -f "$0")")"
+GTK_THEME=Default "$CALLDIR/zotero-bin" -app "$CALLDIR/application.ini" "$@"

@@ -1,0 +1,9 @@
+---
+tags: [dunst]
+---
+
+/lib/systemd/user/dunst.service
+
+$ systemctl --user restart dunst
+
+이거만 하면 일단 수정해서 쓸 수 있다.

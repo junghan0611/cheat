@@ -1,0 +1,18 @@
+---
+tags: [ history ]
+---
+
+# mcfly
+#   Fly through your shell history. Great Scott!
+
+# 기본 검색창
+
+mcfly search
+
+# ssh 히스토리를 보려고 할 때
+mcfly search ssh
+
+# ?
+
+# Appendix
+## .zshrc -- configs

@@ -1,0 +1,14 @@
+---
+tags: [notification, terminal, i3wm]
+---
+
+>rotification
+Rofication is a minimalistic notification system. It is loosely modeled after notification centers on Android and Windows 10. The main idea is to not annoy (e.g. overlap parts of my desktop) but still keep a persistent list of messages. Notifications are useful, however too many notifications showing up too often (e.g. work mail popups) distract from the current task and are therefore dismissed without proper reviewing. The goal is to show (in a single clear place) there are notifications but not pop them up. It is up to the user to review the notifications when time is available. If things are critical one should use a more direct media (e.g. face to face or phone).
+- https://github.com/DaveDavenport/Rofication
+
+> howto
+notify-send ...
+
+> My Usage
+- Telegram Terminal Client (TG)
+https://github.com/paul-nameless/tg

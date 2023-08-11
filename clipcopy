@@ -1,0 +1,15 @@
+---
+tags: [clipboard, clipcopy]
+---
+
+```
+> rg 의 결과를 클립보드로 복사. 이맥스 등 편집기에 붙여넣기 하면 된다.
+$ rg "def " | clipcopy
+$ rg -n -w "def" --sort path -A 5 | clipcopy
+
+> xclip을 이용해서 아래와 같이 동작한다. 땡큐다.
+$ which clipcopy
+clipcopy () {
+	xclip -in -selection clipboard < "${1:-/dev/stdin}"
+}
+``````

@@ -1,0 +1,63 @@
+---
+tags: [web, bookmark]
+---
+===
+buku: Command-line browser-independent bookmark manager.
+===
+
+이거 내가 넣은거네?
+
+# 데이터베이스 설정
+~/.local/share/buku/bookmarks.db 를 읽어 온다.
+그래서 나는 ~/obsd/buku/bookmarks.db 를 넣어놓고 심볼링 링크해놨다. 이렇게
+사용하면 obsd 커밋 관리 같이 하면 되니까. 편하다.
+
+## add (manually)
+$ b -w
+
+## list
+$ b -p
+
+## export
+$ b -e bookmarks.md
+$ b -e bookmarks.org
+
+---------------------------------------
+# ebuku
+이맥스에 연동 시키려고
+https://github.com/flexibeast/ebuku
+
+--------------------------------------------
+# README
+https://github.com/jarun/buku
+
+--------------------------------------------------
+
+# Howto GUI and Browser Integration
+https://github.com/jarun/buku/wiki/System-integration
+- Bookmark from anywhere
+- Auto-import browser bookmarks
+- Export bookmarks to browser
+- Sync bookmarks with a web service
+- Set the preferred editor
+- Sync database across systems
+
+# from TLDR
+  buku
+  Command-line browser-independent bookmark manager.
+  More information: https://github.com/jarun/Buku.
+
+  - Display all bookmarks matching "keyword" and with "privacy" tag:
+    buku keyword --stag privacy
+
+  - Add bookmark with tags "search engine" and "privacy":
+    buku --add https://example.com search engine, privacy
+
+  - Delete a bookmark:
+    buku --delete bookmark_id
+
+  - Open editor to edit a bookmark:
+    buku --write bookmark_id
+
+  - Remove "search engine" tag from a bookmark:
+    buku --update bookmark_id --tag - search engine

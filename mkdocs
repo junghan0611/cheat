@@ -1,0 +1,20 @@
+---
+tags: [mkdocs manual clojure]
+---
+
+# mkdocs
+markdown 기반. 개발 문서화 도구. 프렉티컬리 템플릿을 활용하면 아주 간편해진다.
+
+>git clone git@github.com:practicalli/engineering-playbook.git
+> mkdocs serve
+INFO     -  Building documentation...
+INFO     -  Cleaning site directory
+INFO     -  The following pages exist in the docs directory, but are not included in
+            the "nav" configuration:
+              - assets/images/social/README.md
+INFO     -  Documentation built in 29.92 seconds
+INFO     -  [10:56:42] Watching paths for changes: 'docs', 'mkdocs.yml'
+INFO     -  [10:56:42] Serving on http://127.0.0.1:8000/spacemacs/
+INFO     -  [10:56:47] Browser connected: http://127.0.0.1:8000/spacemacs/
+WARNING  -  [10:56:56] "GET /images/spacemacs-markdown-menu.png HTTP/1.1" code 404
+WARNING  -  [10:56:56] "GET /images/spacemacs-markdown-example.png HTTP/1.1" code 404

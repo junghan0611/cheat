@@ -1,0 +1,24 @@
+---
+tags: [nyxt, browser]
+---
+  nyxt
+  Nyxt is a keyboard-driven web browser for power users.
+  More information: https://nyxt.atlas.engineer.
+
+### emacs-with-nyxt
+https://github.com/ag91/emacs-with-nyxt
+This is some little hack to make Emacs command Nyxt. In particular this provides a function to browse URLs via Nyxt run via Slime.
+
+#### Articles
+- https://nyxt.atlas.engineer/article/emacs-conf.org
+
+### tldr
+➜  ~ tldr nyxt
+  - List all profiles:
+    nyxt --list-data-profiles
+  - Set the init.lisp file path:
+    nyxt --init path/to/file
+  - Change the path to the auto-config file:
+    nyxt --auto-config path/to/file
+  - Print system information:
+    nyxt --system-information

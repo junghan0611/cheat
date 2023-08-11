@@ -1,0 +1,24 @@
+---
+tags: [ quotes ]
+---
+
+1.
+아래 디렉토리를 사용자 디렉토리로 바꿔라
+/usr/share/games/fortunes
+
+2. quotes 파일로 변경
+txt 파일은 % 로 구분되어 있어야 한다.
+`:%s/%/%\r/g` VIM에서 이걸 이용하라
+
+3. path에 복사하고, dat 파일 생성하는 스크립트
+
+```
+➜  fortunes git:(main) ✗ cat update-fortune.sh
+#!/bin/bash
+
+# rm -Rf /usr/share/games/fortunes/*.dat
+cp *.txt /usr/share/games/fortunes/
+cd /usr/share/games/fortunes
+fd -e txt -x strfile {}
+cd -
+```

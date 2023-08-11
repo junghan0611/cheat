@@ -1,0 +1,6 @@
+---
+tags: [gtk]
+---
+
+# GDK backend
+➜  ~ GDK_DEBUG=settings GDK_BACKEND=x11 gedit

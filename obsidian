@@ -1,0 +1,120 @@
+---
+tags: [ note ]
+---
+
+# Obsidian Cheat
+
+- 가이드 문서
+[Obsidian-docs](https://jackiegeek.gitee.io/obsidian-docs/en/How%20to/Keyboard%20shortcuts/)
+** 설명이 잘 되어 있음 **
+
+## General Key
+
+```
+Ctrl + S
+
+Editor: Saves the file
+
+Ctrl + N
+
+Creates a new note
+
+Ctrl + P
+
+Open command pallete
+
+Ctrl + O
+
+Opens Quick Switcher
+
+Ctrl + Shift + F
+
+Search in all files
+
+Ctrl + G
+
+Opens graph view
+
+Ctrl + Alt + ←
+
+Navigate Back
+
+Ctrl + Alt + →
+
+Navigate forth
+
+Ctrl + F
+
+Searches current file
+
+Ctrl + E
+
+Toggle edit/preview modes
+
+Ctrl + ,
+
+Open Settings
+
+Ctrl + Tab
+
+Next tab
+
+Ctrl + Shift + Tab
+
+Previous tab
+
+Alt + Tab
+
+Next App
+
+Alt + Shift + Tab
+
+Previous App
+
+Win + Tab
+
+Task View
+
+Win + Shift + Tab
+
+Next Window
+```
+
+## Editing Shortcuts 
+
+```
+
+Ctrl + B
+
+Bold Selected Text
+
+Ctrl + I
+
+Italicize Selected Text
+
+Ctrl + K
+
+Insert External Link to Selected Text
+
+Ctrl + ]
+
+Indent
+
+Ctrl + `[`
+
+Unindent
+
+Ctrl + D
+
+Delete current line
+
+Ctrl + V
+Duplicate current line
+
+Ctrl + Click
+Open Note in Current Panel via Link
+
+Ctrl + Shift + Click  
+Open Note in New Panel via Link
+
+```

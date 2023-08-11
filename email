@@ -1,0 +1,16 @@
+---
+tags: [email, imap, smtp]
+---
+
+- skku
+  - stmp server
+    - wblock.skku.edu  465
+    - junghan / pw
+    - SSL
+
+  - pop
+    - mail.skku.edu 110
+    - without ssl
+
+# junghanacs@gmail.com
+2020-08-20 만들었다.

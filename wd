@@ -1,0 +1,27 @@
+---
+tags: [ directory  ]
+---
+
+wd (warp directory) lets you jump to custom directories in zsh, without using
+cd. Why? Because cd seems inefficient when the folder is frequently visited or
+has a long path. -- https://github.com/mfaerevaag/wd
+
+# Usage
+
+## Add wrap point to current working directory:
+> wd add foo
+> wd add foo --force
+
+## From any directory, wrap to foo with:
+> wd foo
+
+## foo with autocompletion
+> wd foo some/inter/path
+
+## Others
+> wd list
+> wd rm foo
+> wd ls foo
+> wl path foo
+> wd show
+> wd help

@@ -1,0 +1,40 @@
+---
+tags: [ markdown, asciidoc, org, pandoc ]
+---
+
+# pandoc
+- pandoc을 github에서 최신 deb 다운받아서 설치하라!
+- https://github.com/jgm/pandoc
+
+- org 파일을 md로 변환하자!
+
+```
+# Github Markdown - 깃헙에 올리기 최적. pandoc을 2.18.1 버전으로 업그레이드하니 zettlr에서도 잘 읽힘.
+pandoc -f org ABC.org -t gfm -o ABD.md
+
+# 이외에도 -t 뒤에 다양한 마크다운 포멧을 지원한다.
+# markdown --> pandoc markdown
+# markdown_mmd --> multimarkdown
+# markdown_strict --> strict markdown
+
+
+```
+
+- from `tldr`
+  Convert documents between various formats.
+  More information: https://pandoc.org.
+
+  - Convert file to PDF (the output format is determined by file extension):
+    pandoc input.md -o output.pdf
+
+  - Force conversion to use a specific format:
+    pandoc input.docx --to gfm -o output.md
+
+  - Convert to a standalone file with the appropriate headers/footers (for LaTeX, HTML, etc.):
+    pandoc input.md -s -o output.tex
+
+  - List all supported input formats:
+    pandoc --list-input-formats
+
+  - List all supported output formats:
+    pandoc --list-output-formats

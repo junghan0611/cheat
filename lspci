@@ -1,0 +1,10 @@
+---
+tags: [lspci, intel, driver]
+---
+
+# Graphics
+lspci -k | grep -EA3 'VGA|3D|Display'
+00:02.0 VGA compatible controller: Intel Corporation Iris Pro Graphics 580 (rev 09)
+	DeviceName:  CPU
+	Subsystem: Intel Corporation Iris Pro Graphics 580
+	Kernel driver in use: i915

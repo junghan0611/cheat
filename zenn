@@ -1,0 +1,7 @@
+
+
+  $ zenn new:article
+  $ zenn new:book
+
+  $ zenn preview
+
