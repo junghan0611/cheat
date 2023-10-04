@@ -1,0 +1,6 @@
+
+
+
+https://github.com/soimort/translate-shell
+$ trans :zh "To-morrow, and to-morrow, and to-morrow,"
+$ trans :zh 'To-morrow, and to-morrow, and to-morrow,'

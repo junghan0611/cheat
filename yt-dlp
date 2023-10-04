@@ -1,0 +1,6 @@
+
+https://www.youtube.com/watch?v=_-G9EKaAyuI
+
+youtube_transcript_api _-G9EKaAyuI --languages en --format webvtt > npm-en.vtt
+
+yt-dlp --write-auto-sub --skip-download https://www.youtube.com/watch\?v\=_-G9EKaAyuI --sub-format srt

@@ -13,6 +13,13 @@ $ fd . -t f -E "*.md" -x ln -s {/} {}.md
 - *.md와 *.sh를 다 빼고 싶을 때는 더 써주면 된다.
 $ fd . -t f -E "*.md" -E "*.sh" -x ln -s {/} {}.md
 
+## Cleaner 
+현재 폴더 아래에서 .git 폴더 제외 숨김 폴더까지 다 검색해서 sync 들어간 파일 찾고
+지워라
+fd sync -H -E .git -x rm {}
+
+## Samples
+
 - md to org
 fd -e md -x pandoc {} -o {.}.org
 

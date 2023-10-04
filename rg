@@ -2,12 +2,10 @@
 tags: [ search ]
 ---
 
-# ripgrep (rg)
-- An extremely fast alternative to `grep` that respects your gitignore
-- man rg
-- rg --help
-- 너무 뭐가 많다. 쓸만한 것만 치트키로 기록한다.
+# Use grep to find content in files and move them if they match
+$ rg --files-without-match ":terms:" | xargs mv -t ../notes
 
+# xclip
 > xclip을 이용하여 결과를 클립보드로 복사한다. 이제 이맥스 등에서 붙여넣기 하면 된다.
 > 불편하게 파일 만들어 놓고 붙여넣기 한다던가, 마우스로 스크롤해서 할 필요가 없다.
 rg "def " | clipcopy
